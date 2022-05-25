@@ -1,0 +1,140 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ############  STYLE CSS ########### */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar>ul{
+    display: flex;
+    
+}
+.navbar>ul>li>a, .logo>h1>a{
+    text-decoration: none;
+    color: black;
+}
+.navbar>ul>li{
+    list-style: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: 100ms;
+}
+.navbar>ul>li:hover{
+    background-color: blue;
+    border-radius: 4px;
+}
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 135px;
+}
+
+/* ########## Main Article ########### */
+
+.article{
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+    margin-right: 3%;
+    
+}
+.article>article{
+    width: 500px;
+    margin-left: 95px;
+}
+.article>article>h1{
+    font-size: 40px;
+    padding: 20px 0;
+}
+.article>article>p{
+    padding-bottom: 30px;
+    text-align: justify;
+}
+.article>div>img{
+    width: 400px;
+    margin-left: 140px;
+}
+
+/* ############ GALLERY ################ */
+
+.gallery>h1{
+    text-align: center;
+    margin: 30px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.gallery_img>img{
+    height: 200px;
+    width: 280px;
+    margin-left: 150px;
+    transition: 1000ms;
+}
+/* .gallery_img>img:hover{ */
+    /* transform: scale(1.5); */
+/* } */
+
+/* ################### FOOTER ####################### */
+
+
+footer{
+    background-color: lightgray;
+}
+footer>p{
+    margin-left: 30px;
+}
